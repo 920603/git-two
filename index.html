@@ -4,22 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#">SP</a>
-
-      <ul>
-        <li><a href="#">about</a></li>
-        <li><a href="#">my work</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar__brand" href="#">SP</a>
+        
+        <ul class="navbar__menu" >
+          <li class="navbar__menu-item"><a href="#">about</a></li>
+          <li class="navbar__menu-item"><a href="#">my work</a></li>
+          <li class="navbar__menu-item"><a href="#">contact</a></li>
+        </ul>
+      </div>
     </nav>
-
+      
     <div class="hero">
-      <h1>I create experiences.</h1>
+      <div class="container">
+        <h1>I create experiences.</h1>
+      </div>
     </div>
   </header>
-</body>
+  <main>
+    <div class="container">
+      <section class="about">
+        <h2>Definitely Maybe</h2>
+        <img src="imgs/dm.jpg" alt="">
+      </section>
+    </div>
+  </main>
+  </body>
 </html>
