@@ -31,9 +31,13 @@ img {
 .navbar {
   font-size: 1.8rem;
   background-color: rgb(187, 101, 101);
+  height: 10rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,13 +92,20 @@ img {
 }
 
 .about {
-  padding-top: 5rem;
+  padding: 5rem 0;
+}
+
+.album {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about h2 {
+.album:not(:last-of-type) {
+  margin-bottom: 5rem;
+}
+
+.album__title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -109,5 +120,9 @@ img {
 @media screen and (min-width: 1000px) {
   .about img {
     max-width: 33%;
+  }
+
+  .hero {
+    height: calc(100vh - 10rem);
   }
 }
